@@ -1,0 +1,23 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  /* padding: 55vh 0 0 5vw; */
+  /* justify-content: center; */
+  position: relative;
+  flex-direction: column;
+  background: url(../public/pineforest.jpg) center;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  left: 5vw;
+  top: 65vh;
+  border-left: 8px solid black;
+  padding-left: 1.1rem;
+}
+
+.bannerRotation {
+  padding-bottom: 1vh;
+  transition: opacity 0.3s ease-in-out;
+}
