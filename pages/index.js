@@ -7,7 +7,6 @@ export default function Home() {
     <>
     <Head>
       <title>WebZone | Home</title>
-      <meta name="keywords" content="website design" />
     </Head>
     <div className="home-container container">
       <div className={styles.banner}>
