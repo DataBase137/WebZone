@@ -15,7 +15,7 @@
 .content {
   position: relative;
   left: 5vw;
-  top: 65vh;
+  top: 55vh;
   border-left: 8px solid rgb(26, 26, 26);
   width: 30vw;
   background: rgba(255, 255, 255, 0.3);
@@ -27,25 +27,19 @@
 
 @media screen and (max-height: 800px) {
   .content {
-    top: 60vh !important;
+    top: 50vh !important;
   }
 }
 
 @media screen and (max-height: 675px) {
   .content {
-    top: 55vh !important;
+    top: 45vh !important;
   }
 }
 
-@media screen and (max-height: 575px) {
+@media screen and (max-height: 590px) {
   .content {
-    top: 35vh !important;
-  }
-}
-
-@media screen and (max-height: 400px) {
-  .content {
-    top: 20vh !important;
+    top: 25vh !important;
   }
 }
 

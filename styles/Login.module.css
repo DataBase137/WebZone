@@ -16,7 +16,7 @@
     /* Dark Mode: background: rgba(24, 26, 27, 0.2); */
     /* Light Mode: */ background: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
-    padding: 7vh 5vw;
+    padding: 2vh 4vw 5vh 4vw;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     justify-content: space-evenly;
     transition: 0.3s;
@@ -76,14 +76,15 @@
 	position: absolute;
 	left: 15px;
 	transition: 0.2s ease all;
-    top: 50px;
+    margin-top: 23px;
     font-size: 18px;
+    cursor: text;
 }
 
 .textInputDiv input:focus ~ .floatingLabel,
 .textInputDiv input:not(:focus):not(:placeholder-shown) ~ .floatingLabel,
 .textInputDiv input:valid ~ .floatingLabel{
-	top: 20px;
+	margin-top: 0px;
 	left: 10px;
 	font-size: 13px;
 }
@@ -100,7 +101,6 @@
     padding: 11px 0px;
     font-weight: 300;
     cursor: pointer;
-    margin-top: 20px;
     width: 125px;
 }
 
@@ -155,10 +155,6 @@ input:checked + .slider {
     background-color: #635448;
 }
   
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-  
 input:checked + .slider:before {
     -webkit-transform: translateX(19.5px);
     -ms-transform: translateX(19.5px);
@@ -168,4 +164,12 @@ input:checked + .slider:before {
 .remMeLabel {
     font-size: 1.2rem;
     padding-left: 10px;
+}
+
+.signUpRedirect {
+    font-size: 1.2rem;
+}
+
+.signUpRedirect a {
+    color: #635448;
 }
