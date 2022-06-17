@@ -25,6 +25,7 @@ body {
   font-size: 0.875rem;
   letter-spacing: 150;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 
@@ -59,7 +60,7 @@ h4 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -93,9 +94,15 @@ html {
 }
 
 /* Navbar */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  top: 18px;
+  position: relative;
+}
 
 .nav {
-  width: 100%;
+  width: 93%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -103,12 +110,14 @@ html {
   position: fixed;
   z-index: 1;
   letter-spacing: 150;
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
 }  
 
 .logo {
   padding-top: 2px;
+  transition: 0.8s;
 }
   
 .links a {
@@ -135,7 +144,7 @@ html {
 }
   
 .sign-up-btn {
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: #635448;
   border: none;
   color: #fff;

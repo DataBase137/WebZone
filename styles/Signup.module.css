@@ -1,0 +1,169 @@
+/* Container and Module Setup (Background) */
+
+.signupContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    background: url(../public/pineforest2.jpg) center;
+    background-size: cover;
+}
+
+.signupModule {
+    /* Dark Mode: background: rgba(24, 26, 27, 0.2); */
+    /* Light Mode: */ background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    padding: 7vh 5vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.8s;
+}
+
+@media screen and (max-width: 800px) {
+    .textInput {
+        width: 400px !important;
+    }
+}
+
+/* Sign Up with Email */
+
+.signupEmail {
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.emailHeader {
+    color: rgb(26, 26, 26);
+    transition: 0.5s;
+}
+
+.textInput {
+    height: 70px;
+    width: 500px;
+    padding-left: 18px;
+    font-size: 22px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 400px;
+    background: transparent;
+    color: rgb(46, 46, 46);
+    outline: none;
+    font-weight: 500;
+    border-bottom: 3px solid rgb(46, 46, 46);
+    transition: 0.5s;
+}
+
+.textInput:not(:placeholder-shown):not(:valid) {
+    border-color: rgb(189, 0, 0);
+}
+
+.textInput:focus {
+    border-color: #635448;
+}
+
+.textInput:not(:placeholder-shown):valid {
+    border-color: rgb(5, 110, 5);
+}
+
+.textInputDiv {
+    position: relative;
+}
+
+.floatingLabel {
+	position: absolute;
+	left: 15px;
+	transition: 0.2s ease all;
+    top: 50px;
+    font-size: 18px;
+}
+
+.textInputDiv input:focus ~ .floatingLabel,
+.textInputDiv input:not(:focus):not(:placeholder-shown) ~ .floatingLabel,
+.textInputDiv input:valid ~ .floatingLabel{
+	top: 20px;
+	left: 10px;
+	font-size: 13px;
+}
+
+/* Submit Button */
+
+.submitButton {
+    border-radius: 3px;
+    background-color: #635448;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 11px 0px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 125px;
+}
+
+/* Remember Me Slider */
+
+.rememberMeCheck {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 4px;
+}
+
+.checkLabel {
+    display: inline-block;
+    width: 45px;
+    height: 25.5px;
+    position: relative;
+}
+
+.checkLabel input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19.5px;
+    width: 19.5px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+input:checked + .slider {
+    background-color: #635448;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(19.5px);
+    -ms-transform: translateX(19.5px);
+    transform: translateX(19.5px);
+}
+
+.remMeLabel {
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
