@@ -13,7 +13,9 @@
 
 /* All */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   box-sizing: border-box;
 }
@@ -36,7 +38,10 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.25;
   font-family: "Roboto", sans-serif;
 }
@@ -65,24 +70,27 @@ p {
   h1 {
     font-size: 4rem;
   }
-  
+
   h2 {
     font-size: 2.5rem;
   }
-  
+
   h3 {
     font-size: 1.75rem;
   }
-  
+
   h4 {
     font-size: 1rem;
   }
-  
+
   body {
     font-size: 1rem;
   }
-  
-  h1, h2, h3, h4 {
+
+  h1,
+  h2,
+  h3,
+  h4 {
     line-height: 1;
   }
 }
@@ -106,14 +114,14 @@ html {
   padding: 11px 0px;
   margin-right: 0px;
 }
-  
+
 .sign-up-btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-  
+
 .sign-up-btn span:after {
   content: '\00bb';
   position: absolute;
@@ -122,11 +130,11 @@ html {
   right: -20px;
   transition: 0.5s;
 }
-  
+
 .sign-up-btn:hover span {
   padding-right: 25px;
 }
-  
+
 .sign-up-btn:hover span:after {
   opacity: 1;
   right: 0;
@@ -230,24 +238,24 @@ nav a:hover {
   color: #99846e;
 }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
+.nav-toggle:checked~nav {
+  transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a {
+.nav-toggle:checked~nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-.nav-toggle:checked ~ .nav-toggle-label span {
+.nav-toggle:checked~.nav-toggle-label span {
   transform: rotate(45deg);
 }
 
-.nav-toggle:checked ~ .nav-toggle-label span::before {
+.nav-toggle:checked~.nav-toggle-label span::before {
   opacity: 0;
 }
 
-.nav-toggle:checked ~ .nav-toggle-label span::after {
+.nav-toggle:checked~.nav-toggle-label span::after {
   transform: translateY(-7px) rotate(-90deg);
 }
 
@@ -266,16 +274,16 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
-  
+
   .logo {
     grid-column: 2;
   }
 
-  nav {  
+  nav {
     position: relative;
     text-align: left;
     transition: none;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     background: none;
     top: initial;
     left: initial;
@@ -284,22 +292,22 @@ nav a:hover {
     justify-content: flex-end;
     align-items: center;
   }
-  
+
   nav ul {
     display: flex;
     padding-right: 40px;
   }
-  
+
   nav li {
     margin-left: 3em;
     margin-bottom: 0;
   }
-  
+
   nav a {
     opacity: 1;
     position: relative;
   }
-  
+
   nav a::before {
     content: '';
     display: block;
@@ -312,9 +320,9 @@ nav a:hover {
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
   }
-  
+
   nav a:hover::before {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
@@ -326,7 +334,7 @@ nav a:hover {
   height: 97.6vh;
   align-items: center;
 }
-  
+
 .loader {
   display: flex;
   justify-content: space-around;
@@ -334,7 +342,7 @@ nav a:hover {
   width: 100px;
   height: 100px;
 }
-  
+
 .loader div {
   width: 20px;
   height: 20px;
@@ -342,23 +350,28 @@ nav a:hover {
   border-radius: 50%;
   animation: loader 0.5s cubic-bezier(.19, .57, .3, .98) infinite alternate;
 }
-  
+
 .loader div:nth-child(2) {
   animation-delay: 0.1s;
   opacity: 0.8;
 }
-  
+
 .loader div:nth-child(3) {
   animation-delay: 0.2s;
   opacity: 0.6;
 }
-  
+
 .loader div:nth-child(4) {
   animation-delay: 0.3s;
   opacity: 0.4;
 }
-  
+
 @keyframes loader {
-  from { transform: translateY(0) }
-  to { transform: translateY(-100px) }
+  from {
+    transform: translateY(0)
+  }
+
+  to {
+    transform: translateY(-100px)
+  }
 }

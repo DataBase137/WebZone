@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.15.2",
+    "argon2": "^0.28.5",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "prisma": "^3.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DataBase137/webzone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DataBase137/webzone/issues"
+  },
+  "homepage": "https://github.com/DataBase137/webzone#readme",
+  "description": ""
+}

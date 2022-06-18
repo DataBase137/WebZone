@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const TypeWriter = function(txtElement, words, wait = 5000) {
+  const TypeWriter = function (txtElement, words, wait = 5000) {
     this.txtElement = txtElement;
     this.words = words;
     this.txt = '';
@@ -14,14 +14,14 @@ export default function Home() {
   }
 
   // Type Method
-  TypeWriter.prototype.type = function() {
+  TypeWriter.prototype.type = function () {
     // Current index of word
     const current = this.wordIndex % this.words.length;
     // Get full text of current word
     const fullTxt = this.words[current];
 
     // Check if deleting
-    if(this.isDeleting) {
+    if (this.isDeleting) {
       // Remove char
       this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
@@ -71,19 +71,19 @@ export default function Home() {
 
   return (
     <>
-    <Head>
-      <title>WebZone | Home</title>
-    </Head>
-    <div className={ styles.homeContainer }>
-      <div className={ styles.banner }>
-          <div className={ styles.content }>
-              <h1 className={ styles.h1Txt }>
-                <span className={ styles.txtType } id="txt-type" data-wait="2000" data-words='["Explore", "Create", "Design"]'><span></span></span>
-              </h1>
-            <p className={ styles.bannerHook }>WebZone makes it easy for you to make your own website. With a user friendly experience, and no cost, the possibilities are endless. So why not start building now?</p>
+      <Head>
+        <title>WebZone | Home</title>
+      </Head>
+      <div className={styles.homeContainer}>
+        <div className={styles.banner}>
+          <div className={styles.content}>
+            <h1 className={styles.h1Txt}>
+              <span className={styles.txtType} id="txt-type" data-wait="2000" data-words='["Explore", "Create", "Design"]'><span></span></span>
+            </h1>
+            <p className={styles.bannerHook}>WebZone makes it easy for you to make your own website. With a user friendly experience, and no cost, the possibilities are endless. So why not start building now?</p>
           </div>
+        </div>
       </div>
-    </div>
     </>
   )
 }

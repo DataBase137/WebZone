@@ -57,7 +57,7 @@
 
 /* Typing Effect Cursor */
 
-.txtType > span > span {
+.txtType>span>span {
   border-right: .5rem solid rgb(26, 26, 26);
   animation: blinker 1s linear infinite;
 }
